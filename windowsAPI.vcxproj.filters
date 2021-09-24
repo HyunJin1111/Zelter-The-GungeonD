@@ -1,0 +1,727 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="2DGameFramework">
+      <UniqueIdentifier>{6f3d1e45-ab86-42a7-9a61-2bd45cd7872c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround">
+      <UniqueIdentifier>{95982806-068a-439b-ba72-8cb93f3609f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DGameFramework\SingletonBase">
+      <UniqueIdentifier>{fab0ad69-58ad-46bb-984d-736d10eee0f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DGameFramework\Manager">
+      <UniqueIdentifier>{05d340ae-7cae-42ce-831b-ae2b80a9b8c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DGameFramework\image">
+      <UniqueIdentifier>{161a019f-83fb-4aa5-a2bd-53b11c8888ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DGameFramework\Utils">
+      <UniqueIdentifier>{6649f313-dbf4-4ec9-afff-24f47b1a709e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DGameFramework\timer">
+      <UniqueIdentifier>{903124e9-0a6f-4f4f-8a9b-cc25c6f3482b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DGameFramework\animation">
+      <UniqueIdentifier>{206ac15a-4721-4c12-93be-e176c2715a13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DGameFramework\D2DRenderer">
+      <UniqueIdentifier>{1f06f2e0-c3bd-4a9c-bad1-d0e16a21ee0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DGameFramework\txtData">
+      <UniqueIdentifier>{431e51a5-80a3-453e-b6b4-0a46c07862b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DGameFramework\progressBar">
+      <UniqueIdentifier>{ee62a098-ef97-4b9d-8456-fac2e92e0b42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\test">
+      <UniqueIdentifier>{bf6123cb-9085-4bbd-8368-fdd86f0c2103}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DGameFramework\Manager\mapTool">
+      <UniqueIdentifier>{a49d04e8-0f11-4db7-b4a5-cc589b3afe2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\stageManager">
+      <UniqueIdentifier>{74ba3978-bef4-4c32-a051-8f7f5d43a1ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\player">
+      <UniqueIdentifier>{ed1fbe7c-c35b-4c6f-b709-7c6433c1db63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\player\playerSTATE">
+      <UniqueIdentifier>{18c0ded0-fa89-463c-875b-82bc69082950}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\player\playerUI">
+      <UniqueIdentifier>{0832b104-800d-4182-9348-69f276e48564}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\boss">
+      <UniqueIdentifier>{9b95cb00-643e-4bde-991c-bfb300858c58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\boss\eggNyang">
+      <UniqueIdentifier>{04afa997-dce4-40bd-9d0e-ca575b83c21a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\boss\niflheim">
+      <UniqueIdentifier>{3378b139-d702-4705-91bd-35b58501a7ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\boss\eggNyang\eggNyangBullet">
+      <UniqueIdentifier>{f5e6db42-1881-4794-bae6-99b121f7ad7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\boss\eggNyang\eggNyangState">
+      <UniqueIdentifier>{52ddc8e7-864c-4e77-9cb8-47873a6b0a54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\boss\eggNyang\eggNyangState\state">
+      <UniqueIdentifier>{3cbafba3-e0cd-44fc-aae0-89500c686012}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\boss\niflheim\niflheimBullet">
+      <UniqueIdentifier>{d6da9016-511f-48d3-a6f0-94ac5a9b5efd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\boss\niflheim\niflheimState">
+      <UniqueIdentifier>{40d533de-2374-4040-83fc-700b87bfce56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\boss\niflheim\niflheimState\state">
+      <UniqueIdentifier>{1b51e0b1-6133-472f-806e-07aa40c3c77d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\boss\ammoconda">
+      <UniqueIdentifier>{ec1be372-cab8-4aa4-99bc-3fa18681e3b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\boss\bulletKing">
+      <UniqueIdentifier>{0685ab08-df7d-4807-b674-d70f21595137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\enemy">
+      <UniqueIdentifier>{95b42c3a-cf56-41a3-acd8-c50f595da0ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\boss\ammoconda\ammocondaState">
+      <UniqueIdentifier>{b55814b9-ceec-428c-a3c0-09258329cab4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\boss\ammoconda\ammocondaBullet">
+      <UniqueIdentifier>{dee1f0ec-4625-4e50-8c26-d8d31d5c919e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\boss\bulletKing\bulletKingState">
+      <UniqueIdentifier>{a0b38bde-2e06-4a0e-899d-4f1cb0c2f777}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\boss\bulletKing\bulletKingBullet">
+      <UniqueIdentifier>{48c29b85-9c9f-490a-83a5-acbd833603e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\test\inGame">
+      <UniqueIdentifier>{1914be6b-f240-484d-9f66-5621e2514ce2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\loading">
+      <UniqueIdentifier>{82460b8e-0145-4785-b988-c869b808af19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\enemy\dialogue">
+      <UniqueIdentifier>{d7caf8d2-2d82-4f33-8116-b647590a73fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\startTitle">
+      <UniqueIdentifier>{1b37411a-03ee-43b9-97c4-6439ceb084ee}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="windowsAPI.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gameNode.h">
+      <Filter>2DGameFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="playGround.h">
+      <Filter>playGround</Filter>
+    </ClInclude>
+    <ClInclude Include="singletonBase.h">
+      <Filter>2DGameFramework\SingletonBase</Filter>
+    </ClInclude>
+    <ClInclude Include="keyManager.h">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="image.h">
+      <Filter>2DGameFramework\image</Filter>
+    </ClInclude>
+    <ClInclude Include="imageManager.h">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="txtData.h">
+      <Filter>2DGameFramework\txtData</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.h">
+      <Filter>2DGameFramework\timer</Filter>
+    </ClInclude>
+    <ClInclude Include="timeManager.h">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="animation.h">
+      <Filter>2DGameFramework\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="soundManager.h">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="sceneManager.h">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="D2DRenderer.h">
+      <Filter>2DGameFramework\D2DRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="LibraryHeader.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>2DGameFramework\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="vector2.h">
+      <Filter>2DGameFramework\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="line.h">
+      <Filter>2DGameFramework\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="commonMacroFunction.h">
+      <Filter>2DGameFramework\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="randomFunction.h">
+      <Filter>2DGameFramework\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="iniDataManager.h">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="cameraManager.h">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="progressBar.h">
+      <Filter>2DGameFramework\progressBar</Filter>
+    </ClInclude>
+    <ClInclude Include="testScene.h">
+      <Filter>playGround\test</Filter>
+    </ClInclude>
+    <ClInclude Include="stageManager.h">
+      <Filter>playGround\stageManager</Filter>
+    </ClInclude>
+    <ClInclude Include="mapmap.h">
+      <Filter>2DGameFramework\Manager\mapTool</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>playGround\player</Filter>
+    </ClInclude>
+    <ClInclude Include="playerBullet.h">
+      <Filter>playGround\player</Filter>
+    </ClInclude>
+    <ClInclude Include="pause.h">
+      <Filter>playGround\player\playerUI</Filter>
+    </ClInclude>
+    <ClInclude Include="playerAttack.h">
+      <Filter>playGround\player\playerSTATE</Filter>
+    </ClInclude>
+    <ClInclude Include="playerDie.h">
+      <Filter>playGround\player\playerSTATE</Filter>
+    </ClInclude>
+    <ClInclude Include="playerDonwJump.h">
+      <Filter>playGround\player\playerSTATE</Filter>
+    </ClInclude>
+    <ClInclude Include="playerHit.h">
+      <Filter>playGround\player\playerSTATE</Filter>
+    </ClInclude>
+    <ClInclude Include="playerJump.h">
+      <Filter>playGround\player\playerSTATE</Filter>
+    </ClInclude>
+    <ClInclude Include="playerRoll.h">
+      <Filter>playGround\player\playerSTATE</Filter>
+    </ClInclude>
+    <ClInclude Include="playerRun.h">
+      <Filter>playGround\player\playerSTATE</Filter>
+    </ClInclude>
+    <ClInclude Include="playerState.h">
+      <Filter>playGround\player\playerSTATE</Filter>
+    </ClInclude>
+    <ClInclude Include="playerStateIdle.h">
+      <Filter>playGround\player\playerSTATE</Filter>
+    </ClInclude>
+    <ClInclude Include="quickSlot.h">
+      <Filter>playGround\player\playerUI</Filter>
+    </ClInclude>
+    <ClInclude Include="characterPick.h">
+      <Filter>playGround\player</Filter>
+    </ClInclude>
+    <ClInclude Include="eggNyang.h">
+      <Filter>playGround\boss\eggNyang</Filter>
+    </ClInclude>
+    <ClInclude Include="eggNyangBullet.h">
+      <Filter>playGround\boss\eggNyang\eggNyangBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="eggNyangAttack1.h">
+      <Filter>playGround\boss\eggNyang\eggNyangState</Filter>
+    </ClInclude>
+    <ClInclude Include="eggNyangAttack2.h">
+      <Filter>playGround\boss\eggNyang\eggNyangState</Filter>
+    </ClInclude>
+    <ClInclude Include="eggNyangAttack3.h">
+      <Filter>playGround\boss\eggNyang\eggNyangState</Filter>
+    </ClInclude>
+    <ClInclude Include="eggNyangDie.h">
+      <Filter>playGround\boss\eggNyang\eggNyangState</Filter>
+    </ClInclude>
+    <ClInclude Include="eggNyangIdle.h">
+      <Filter>playGround\boss\eggNyang\eggNyangState</Filter>
+    </ClInclude>
+    <ClInclude Include="eggNyangStateBase.h">
+      <Filter>playGround\boss\eggNyang\eggNyangState\state</Filter>
+    </ClInclude>
+    <ClInclude Include="niflheim.h">
+      <Filter>playGround\boss\niflheim</Filter>
+    </ClInclude>
+    <ClInclude Include="niflheimBullet.h">
+      <Filter>playGround\boss\niflheim\niflheimBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="niflheimAttack1.h">
+      <Filter>playGround\boss\niflheim\niflheimState</Filter>
+    </ClInclude>
+    <ClInclude Include="niflheimAttack2.h">
+      <Filter>playGround\boss\niflheim\niflheimState</Filter>
+    </ClInclude>
+    <ClInclude Include="niflheimAttack3.h">
+      <Filter>playGround\boss\niflheim\niflheimState</Filter>
+    </ClInclude>
+    <ClInclude Include="niflheimDie.h">
+      <Filter>playGround\boss\niflheim\niflheimState</Filter>
+    </ClInclude>
+    <ClInclude Include="niflheimEnter.h">
+      <Filter>playGround\boss\niflheim\niflheimState</Filter>
+    </ClInclude>
+    <ClInclude Include="niflheimIdle.h">
+      <Filter>playGround\boss\niflheim\niflheimState</Filter>
+    </ClInclude>
+    <ClInclude Include="state.h">
+      <Filter>playGround\boss\niflheim\niflheimState\state</Filter>
+    </ClInclude>
+    <ClInclude Include="ammoconda.h">
+      <Filter>playGround\boss\ammoconda</Filter>
+    </ClInclude>
+    <ClInclude Include="ammocondaBattle.h">
+      <Filter>playGround\boss\ammoconda</Filter>
+    </ClInclude>
+    <ClInclude Include="bulletKing.h">
+      <Filter>playGround\boss\bulletKing</Filter>
+    </ClInclude>
+    <ClInclude Include="bulletKingBattle.h">
+      <Filter>playGround\boss\bulletKing</Filter>
+    </ClInclude>
+    <ClInclude Include="dinosaur.h">
+      <Filter>playGround\enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="fishMan.h">
+      <Filter>playGround\enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="ammocondaState.h">
+      <Filter>playGround\boss\ammoconda\ammocondaState</Filter>
+    </ClInclude>
+    <ClInclude Include="ammocondaRecovery.h">
+      <Filter>playGround\boss\ammoconda\ammocondaState</Filter>
+    </ClInclude>
+    <ClInclude Include="ammocondaIdle.h">
+      <Filter>playGround\boss\ammoconda\ammocondaState</Filter>
+    </ClInclude>
+    <ClInclude Include="ammocondaAttack2.h">
+      <Filter>playGround\boss\ammoconda\ammocondaState</Filter>
+    </ClInclude>
+    <ClInclude Include="ammocondaAttack1.h">
+      <Filter>playGround\boss\ammoconda\ammocondaState</Filter>
+    </ClInclude>
+    <ClInclude Include="ammocondaBullet.h">
+      <Filter>playGround\boss\ammoconda\ammocondaBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="bulletKingAttack1.h">
+      <Filter>playGround\boss\bulletKing\bulletKingState</Filter>
+    </ClInclude>
+    <ClInclude Include="bulletKingAttack2.h">
+      <Filter>playGround\boss\bulletKing\bulletKingState</Filter>
+    </ClInclude>
+    <ClInclude Include="bulletKingAttack3.h">
+      <Filter>playGround\boss\bulletKing\bulletKingState</Filter>
+    </ClInclude>
+    <ClInclude Include="bulletKingDeath.h">
+      <Filter>playGround\boss\bulletKing\bulletKingState</Filter>
+    </ClInclude>
+    <ClInclude Include="bulletKingHit.h">
+      <Filter>playGround\boss\bulletKing\bulletKingState</Filter>
+    </ClInclude>
+    <ClInclude Include="bulletKingIdle.h">
+      <Filter>playGround\boss\bulletKing\bulletKingState</Filter>
+    </ClInclude>
+    <ClInclude Include="bulletKingState.h">
+      <Filter>playGround\boss\bulletKing\bulletKingState</Filter>
+    </ClInclude>
+    <ClInclude Include="bulletKingBullet.h">
+      <Filter>playGround\boss\bulletKing\bulletKingBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="tileNode.h">
+      <Filter>playGround\test</Filter>
+    </ClInclude>
+    <ClInclude Include="inGame.h">
+      <Filter>playGround\test\inGame</Filter>
+    </ClInclude>
+    <ClInclude Include="inGameMap.h">
+      <Filter>playGround\test\inGame</Filter>
+    </ClInclude>
+    <ClInclude Include="eggNyangBattle.h">
+      <Filter>playGround\boss\eggNyang</Filter>
+    </ClInclude>
+    <ClInclude Include="niflheimBattle.h">
+      <Filter>playGround\boss\niflheim</Filter>
+    </ClInclude>
+    <ClInclude Include="ammocondaMap.h">
+      <Filter>playGround\boss\ammoconda</Filter>
+    </ClInclude>
+    <ClInclude Include="bulletKingMap.h">
+      <Filter>playGround\boss\bulletKing</Filter>
+    </ClInclude>
+    <ClInclude Include="loading.h">
+      <Filter>playGround\loading</Filter>
+    </ClInclude>
+    <ClInclude Include="eggNyangMap.h">
+      <Filter>playGround\boss\eggNyang</Filter>
+    </ClInclude>
+    <ClInclude Include="niflheimMap.h">
+      <Filter>playGround\boss\niflheim</Filter>
+    </ClInclude>
+    <ClInclude Include="dialogue.h">
+      <Filter>playGround\enemy\dialogue</Filter>
+    </ClInclude>
+    <ClInclude Include="playerDash.h">
+      <Filter>playGround\player\playerSTATE</Filter>
+    </ClInclude>
+    <ClInclude Include="playerFall.h">
+      <Filter>playGround\player\playerSTATE</Filter>
+    </ClInclude>
+    <ClInclude Include="startTitle.h">
+      <Filter>playGround\startTitle</Filter>
+    </ClInclude>
+    <ClInclude Include="ammocondaDeath.h">
+      <Filter>playGround\boss\ammoconda\ammocondaState</Filter>
+    </ClInclude>
+    <ClInclude Include="aStar.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="windowsAPI.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="gameNode.cpp">
+      <Filter>2DGameFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="playGround.cpp">
+      <Filter>playGround</Filter>
+    </ClCompile>
+    <ClCompile Include="keyManager.cpp">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="image.cpp">
+      <Filter>2DGameFramework\image</Filter>
+    </ClCompile>
+    <ClCompile Include="imageManager.cpp">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="txtData.cpp">
+      <Filter>2DGameFramework\txtData</Filter>
+    </ClCompile>
+    <ClCompile Include="timer.cpp">
+      <Filter>2DGameFramework\timer</Filter>
+    </ClCompile>
+    <ClCompile Include="timeManager.cpp">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="animation.cpp">
+      <Filter>2DGameFramework\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="soundManager.cpp">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="sceneManager.cpp">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="D2DRenderer.cpp">
+      <Filter>2DGameFramework\D2DRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="D2DRenderer+Draw.cpp">
+      <Filter>2DGameFramework\D2DRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>2DGameFramework\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="vector2.cpp">
+      <Filter>2DGameFramework\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="line.cpp">
+      <Filter>2DGameFramework\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="iniDataManager.cpp">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="cameraManager.cpp">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="progressBar.cpp">
+      <Filter>2DGameFramework\progressBar</Filter>
+    </ClCompile>
+    <ClCompile Include="testScene.cpp">
+      <Filter>playGround\test</Filter>
+    </ClCompile>
+    <ClCompile Include="stageManager.cpp">
+      <Filter>playGround\stageManager</Filter>
+    </ClCompile>
+    <ClCompile Include="mapmap.cpp">
+      <Filter>2DGameFramework\Manager\mapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>playGround\player</Filter>
+    </ClCompile>
+    <ClCompile Include="playerBullet.cpp">
+      <Filter>playGround\player</Filter>
+    </ClCompile>
+    <ClCompile Include="pause.cpp">
+      <Filter>playGround\player\playerUI</Filter>
+    </ClCompile>
+    <ClCompile Include="playerAttack.cpp">
+      <Filter>playGround\player\playerSTATE</Filter>
+    </ClCompile>
+    <ClCompile Include="playerDie.cpp">
+      <Filter>playGround\player\playerSTATE</Filter>
+    </ClCompile>
+    <ClCompile Include="playerDonwJump.cpp">
+      <Filter>playGround\player\playerSTATE</Filter>
+    </ClCompile>
+    <ClCompile Include="playerHit.cpp">
+      <Filter>playGround\player\playerSTATE</Filter>
+    </ClCompile>
+    <ClCompile Include="playerJump.cpp">
+      <Filter>playGround\player\playerSTATE</Filter>
+    </ClCompile>
+    <ClCompile Include="playerRoll.cpp">
+      <Filter>playGround\player\playerSTATE</Filter>
+    </ClCompile>
+    <ClCompile Include="playerRun.cpp">
+      <Filter>playGround\player\playerSTATE</Filter>
+    </ClCompile>
+    <ClCompile Include="playerState.cpp">
+      <Filter>playGround\player\playerSTATE</Filter>
+    </ClCompile>
+    <ClCompile Include="playerStateIdle.cpp">
+      <Filter>playGround\player\playerSTATE</Filter>
+    </ClCompile>
+    <ClCompile Include="quickSlot.cpp">
+      <Filter>playGround\player\playerUI</Filter>
+    </ClCompile>
+    <ClCompile Include="characterPick.cpp">
+      <Filter>playGround\player</Filter>
+    </ClCompile>
+    <ClCompile Include="eggNyang.cpp">
+      <Filter>playGround\boss\eggNyang</Filter>
+    </ClCompile>
+    <ClCompile Include="eggNyang + Lazer.cpp">
+      <Filter>playGround\boss\eggNyang\eggNyangBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="eggNyang + Sword.cpp">
+      <Filter>playGround\boss\eggNyang\eggNyangBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="eggNyangBullet.cpp">
+      <Filter>playGround\boss\eggNyang\eggNyangBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="eggNyangAttack1.cpp">
+      <Filter>playGround\boss\eggNyang\eggNyangState</Filter>
+    </ClCompile>
+    <ClCompile Include="eggNyangAttack2.cpp">
+      <Filter>playGround\boss\eggNyang\eggNyangState</Filter>
+    </ClCompile>
+    <ClCompile Include="eggNyangAttack3.cpp">
+      <Filter>playGround\boss\eggNyang\eggNyangState</Filter>
+    </ClCompile>
+    <ClCompile Include="eggNyangDie.cpp">
+      <Filter>playGround\boss\eggNyang\eggNyangState</Filter>
+    </ClCompile>
+    <ClCompile Include="eggNyangIdle.cpp">
+      <Filter>playGround\boss\eggNyang\eggNyangState</Filter>
+    </ClCompile>
+    <ClCompile Include="eggNyangStateBase.cpp">
+      <Filter>playGround\boss\eggNyang\eggNyangState\state</Filter>
+    </ClCompile>
+    <ClCompile Include="niflheim.cpp">
+      <Filter>playGround\boss\niflheim</Filter>
+    </ClCompile>
+    <ClCompile Include="niflheim + icePillar.cpp">
+      <Filter>playGround\boss\niflheim\niflheimBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="niflheim + iceSpear.cpp">
+      <Filter>playGround\boss\niflheim\niflheimBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="niflheim + icicle.cpp">
+      <Filter>playGround\boss\niflheim\niflheimBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="niflheimAttack1.cpp">
+      <Filter>playGround\boss\niflheim\niflheimState</Filter>
+    </ClCompile>
+    <ClCompile Include="niflheimAttack2.cpp">
+      <Filter>playGround\boss\niflheim\niflheimState</Filter>
+    </ClCompile>
+    <ClCompile Include="niflheimAttack3.cpp">
+      <Filter>playGround\boss\niflheim\niflheimState</Filter>
+    </ClCompile>
+    <ClCompile Include="niflheimDie.cpp">
+      <Filter>playGround\boss\niflheim\niflheimState</Filter>
+    </ClCompile>
+    <ClCompile Include="niflheimEnter.cpp">
+      <Filter>playGround\boss\niflheim\niflheimState</Filter>
+    </ClCompile>
+    <ClCompile Include="niflheimIdle.cpp">
+      <Filter>playGround\boss\niflheim\niflheimState</Filter>
+    </ClCompile>
+    <ClCompile Include="state.cpp">
+      <Filter>playGround\boss\niflheim\niflheimState\state</Filter>
+    </ClCompile>
+    <ClCompile Include="ammoconda.cpp">
+      <Filter>playGround\boss\ammoconda</Filter>
+    </ClCompile>
+    <ClCompile Include="ammoconda+pot.cpp">
+      <Filter>playGround\boss\ammoconda</Filter>
+    </ClCompile>
+    <ClCompile Include="ammocondaBattle.cpp">
+      <Filter>playGround\boss\ammoconda</Filter>
+    </ClCompile>
+    <ClCompile Include="bulletKing.cpp">
+      <Filter>playGround\boss\bulletKing</Filter>
+    </ClCompile>
+    <ClCompile Include="bulletKingBattle.cpp">
+      <Filter>playGround\boss\bulletKing</Filter>
+    </ClCompile>
+    <ClCompile Include="dinosaur.cpp">
+      <Filter>playGround\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="fishMan.cpp">
+      <Filter>playGround\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="ammocondaState.cpp">
+      <Filter>playGround\boss\ammoconda\ammocondaState</Filter>
+    </ClCompile>
+    <ClCompile Include="ammocondaRecovery.cpp">
+      <Filter>playGround\boss\ammoconda\ammocondaState</Filter>
+    </ClCompile>
+    <ClCompile Include="ammocondaIdle.cpp">
+      <Filter>playGround\boss\ammoconda\ammocondaState</Filter>
+    </ClCompile>
+    <ClCompile Include="ammocondaAttack2.cpp">
+      <Filter>playGround\boss\ammoconda\ammocondaState</Filter>
+    </ClCompile>
+    <ClCompile Include="ammocondaAttack1.cpp">
+      <Filter>playGround\boss\ammoconda\ammocondaState</Filter>
+    </ClCompile>
+    <ClCompile Include="ammocondaBullet.cpp">
+      <Filter>playGround\boss\ammoconda\ammocondaBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="bulletKingAttack1.cpp">
+      <Filter>playGround\boss\bulletKing\bulletKingState</Filter>
+    </ClCompile>
+    <ClCompile Include="bulletKingAttack2.cpp">
+      <Filter>playGround\boss\bulletKing\bulletKingState</Filter>
+    </ClCompile>
+    <ClCompile Include="bulletKingAttack3.cpp">
+      <Filter>playGround\boss\bulletKing\bulletKingState</Filter>
+    </ClCompile>
+    <ClCompile Include="bulletKingDeath.cpp">
+      <Filter>playGround\boss\bulletKing\bulletKingState</Filter>
+    </ClCompile>
+    <ClCompile Include="bulletKingHit.cpp">
+      <Filter>playGround\boss\bulletKing\bulletKingState</Filter>
+    </ClCompile>
+    <ClCompile Include="bulletKingIdle.cpp">
+      <Filter>playGround\boss\bulletKing\bulletKingState</Filter>
+    </ClCompile>
+    <ClCompile Include="bulletKingState.cpp">
+      <Filter>playGround\boss\bulletKing\bulletKingState</Filter>
+    </ClCompile>
+    <ClCompile Include="bulletKingBullet.cpp">
+      <Filter>playGround\boss\bulletKing\bulletKingBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="tileNode.cpp">
+      <Filter>playGround\test</Filter>
+    </ClCompile>
+    <ClCompile Include="inGame.cpp">
+      <Filter>playGround\test\inGame</Filter>
+    </ClCompile>
+    <ClCompile Include="inGameMap.cpp">
+      <Filter>playGround\test\inGame</Filter>
+    </ClCompile>
+    <ClCompile Include="eggNyangBattle.cpp">
+      <Filter>playGround\boss\eggNyang</Filter>
+    </ClCompile>
+    <ClCompile Include="niflheimBattle.cpp">
+      <Filter>playGround\boss\niflheim</Filter>
+    </ClCompile>
+    <ClCompile Include="ammocondaMap.cpp">
+      <Filter>playGround\boss\ammoconda</Filter>
+    </ClCompile>
+    <ClCompile Include="bulletKingMap.cpp">
+      <Filter>playGround\boss\bulletKing</Filter>
+    </ClCompile>
+    <ClCompile Include="loading.cpp">
+      <Filter>playGround\loading</Filter>
+    </ClCompile>
+    <ClCompile Include="eggNyangMap.cpp">
+      <Filter>playGround\boss\eggNyang</Filter>
+    </ClCompile>
+    <ClCompile Include="niflheimMap.cpp">
+      <Filter>playGround\boss\niflheim</Filter>
+    </ClCompile>
+    <ClCompile Include="dialogue.cpp">
+      <Filter>playGround\enemy\dialogue</Filter>
+    </ClCompile>
+    <ClCompile Include="player + tileDetect.cpp">
+      <Filter>playGround\player</Filter>
+    </ClCompile>
+    <ClCompile Include="playerDash.cpp">
+      <Filter>playGround\player\playerSTATE</Filter>
+    </ClCompile>
+    <ClCompile Include="playerFall.cpp">
+      <Filter>playGround\player\playerSTATE</Filter>
+    </ClCompile>
+    <ClCompile Include="startTitle.cpp">
+      <Filter>playGround\startTitle</Filter>
+    </ClCompile>
+    <ClCompile Include="ammocondaDeath.cpp">
+      <Filter>playGround\boss\ammoconda\ammocondaState</Filter>
+    </ClCompile>
+    <ClCompile Include="aStar.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="windowsAPI.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="windowsAPI.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bulletKing" />
+  </ItemGroup>
+</Project>

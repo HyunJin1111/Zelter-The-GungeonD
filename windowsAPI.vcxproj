@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{E2958D70-CFC8-4A1D-980D-12180D9B541F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>windowsAPI</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ammoconda.h" />
+    <ClInclude Include="ammocondaAttack1.h" />
+    <ClInclude Include="ammocondaAttack2.h" />
+    <ClInclude Include="ammocondaBattle.h" />
+    <ClInclude Include="ammocondaBullet.h" />
+    <ClInclude Include="ammocondaDeath.h" />
+    <ClInclude Include="ammocondaIdle.h" />
+    <ClInclude Include="ammocondaMap.h" />
+    <ClInclude Include="ammocondaRecovery.h" />
+    <ClInclude Include="ammocondaState.h" />
+    <ClInclude Include="animation.h" />
+    <ClInclude Include="aStar.h" />
+    <ClInclude Include="bulletKing.h" />
+    <ClInclude Include="bulletKingAttack1.h" />
+    <ClInclude Include="bulletKingAttack2.h" />
+    <ClInclude Include="bulletKingAttack3.h" />
+    <ClInclude Include="bulletKingBattle.h" />
+    <ClInclude Include="bulletKingBullet.h" />
+    <ClInclude Include="bulletKingDeath.h" />
+    <ClInclude Include="bulletKingHit.h" />
+    <ClInclude Include="bulletKingIdle.h" />
+    <ClInclude Include="bulletKingMap.h" />
+    <ClInclude Include="bulletKingState.h" />
+    <ClInclude Include="cameraManager.h" />
+    <ClInclude Include="characterPick.h" />
+    <ClInclude Include="commonMacroFunction.h" />
+    <ClInclude Include="D2DRenderer.h" />
+    <ClInclude Include="dialogue.h" />
+    <ClInclude Include="dinosaur.h" />
+    <ClInclude Include="eggNyang.h" />
+    <ClInclude Include="eggNyangAttack1.h" />
+    <ClInclude Include="eggNyangAttack2.h" />
+    <ClInclude Include="eggNyangAttack3.h" />
+    <ClInclude Include="eggNyangBattle.h" />
+    <ClInclude Include="eggNyangBullet.h" />
+    <ClInclude Include="eggNyangDie.h" />
+    <ClInclude Include="eggNyangIdle.h" />
+    <ClInclude Include="eggNyangMap.h" />
+    <ClInclude Include="eggNyangStateBase.h" />
+    <ClInclude Include="fishMan.h" />
+    <ClInclude Include="gameNode.h" />
+    <ClInclude Include="image.h" />
+    <ClInclude Include="imageManager.h" />
+    <ClInclude Include="inGame.h" />
+    <ClInclude Include="inGameMap.h" />
+    <ClInclude Include="iniDataManager.h" />
+    <ClInclude Include="keyManager.h" />
+    <ClInclude Include="LibraryHeader.h" />
+    <ClInclude Include="line.h" />
+    <ClInclude Include="loading.h" />
+    <ClInclude Include="mapmap.h" />
+    <ClInclude Include="niflheim.h" />
+    <ClInclude Include="niflheimAttack1.h" />
+    <ClInclude Include="niflheimAttack2.h" />
+    <ClInclude Include="niflheimAttack3.h" />
+    <ClInclude Include="niflheimBattle.h" />
+    <ClInclude Include="niflheimBullet.h" />
+    <ClInclude Include="niflheimDie.h" />
+    <ClInclude Include="niflheimEnter.h" />
+    <ClInclude Include="niflheimIdle.h" />
+    <ClInclude Include="niflheimMap.h" />
+    <ClInclude Include="pause.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="playerAttack.h" />
+    <ClInclude Include="playerBullet.h" />
+    <ClInclude Include="playerDash.h" />
+    <ClInclude Include="playerDie.h" />
+    <ClInclude Include="playerDonwJump.h" />
+    <ClInclude Include="playerFall.h" />
+    <ClInclude Include="playerHit.h" />
+    <ClInclude Include="playerJump.h" />
+    <ClInclude Include="playerRoll.h" />
+    <ClInclude Include="playerRun.h" />
+    <ClInclude Include="playerState.h" />
+    <ClInclude Include="playerStateIdle.h" />
+    <ClInclude Include="playGround.h" />
+    <ClInclude Include="progressBar.h" />
+    <ClInclude Include="quickSlot.h" />
+    <ClInclude Include="randomFunction.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="sceneManager.h" />
+    <ClInclude Include="singletonBase.h" />
+    <ClInclude Include="soundManager.h" />
+    <ClInclude Include="stageManager.h" />
+    <ClInclude Include="startTitle.h" />
+    <ClInclude Include="state.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="testScene.h" />
+    <ClInclude Include="tileNode.h" />
+    <ClInclude Include="timeManager.h" />
+    <ClInclude Include="timer.h" />
+    <ClInclude Include="txtData.h" />
+    <ClInclude Include="utils.h" />
+    <ClInclude Include="vector2.h" />
+    <ClInclude Include="windowsAPI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ammoconda+pot.cpp" />
+    <ClCompile Include="ammoconda.cpp" />
+    <ClCompile Include="ammocondaAttack1.cpp" />
+    <ClCompile Include="ammocondaAttack2.cpp" />
+    <ClCompile Include="ammocondaBattle.cpp" />
+    <ClCompile Include="ammocondaBullet.cpp" />
+    <ClCompile Include="ammocondaDeath.cpp" />
+    <ClCompile Include="ammocondaIdle.cpp" />
+    <ClCompile Include="ammocondaMap.cpp" />
+    <ClCompile Include="ammocondaRecovery.cpp" />
+    <ClCompile Include="ammocondaState.cpp" />
+    <ClCompile Include="animation.cpp" />
+    <ClCompile Include="aStar.cpp" />
+    <ClCompile Include="bulletKing.cpp" />
+    <ClCompile Include="bulletKingAttack1.cpp" />
+    <ClCompile Include="bulletKingAttack2.cpp" />
+    <ClCompile Include="bulletKingAttack3.cpp" />
+    <ClCompile Include="bulletKingBattle.cpp" />
+    <ClCompile Include="bulletKingBullet.cpp" />
+    <ClCompile Include="bulletKingDeath.cpp" />
+    <ClCompile Include="bulletKingHit.cpp" />
+    <ClCompile Include="bulletKingIdle.cpp" />
+    <ClCompile Include="bulletKingMap.cpp" />
+    <ClCompile Include="bulletKingState.cpp" />
+    <ClCompile Include="cameraManager.cpp" />
+    <ClCompile Include="characterPick.cpp" />
+    <ClCompile Include="D2DRenderer+Draw.cpp" />
+    <ClCompile Include="D2DRenderer.cpp" />
+    <ClCompile Include="dialogue.cpp" />
+    <ClCompile Include="dinosaur.cpp" />
+    <ClCompile Include="eggNyang + Lazer.cpp" />
+    <ClCompile Include="eggNyang + Sword.cpp" />
+    <ClCompile Include="eggNyang.cpp" />
+    <ClCompile Include="eggNyangAttack1.cpp" />
+    <ClCompile Include="eggNyangAttack2.cpp" />
+    <ClCompile Include="eggNyangAttack3.cpp" />
+    <ClCompile Include="eggNyangBattle.cpp" />
+    <ClCompile Include="eggNyangBullet.cpp" />
+    <ClCompile Include="eggNyangDie.cpp" />
+    <ClCompile Include="eggNyangIdle.cpp" />
+    <ClCompile Include="eggNyangMap.cpp" />
+    <ClCompile Include="eggNyangStateBase.cpp" />
+    <ClCompile Include="fishMan.cpp" />
+    <ClCompile Include="gameNode.cpp" />
+    <ClCompile Include="image.cpp" />
+    <ClCompile Include="imageManager.cpp" />
+    <ClCompile Include="inGame.cpp" />
+    <ClCompile Include="inGameMap.cpp" />
+    <ClCompile Include="iniDataManager.cpp" />
+    <ClCompile Include="keyManager.cpp" />
+    <ClCompile Include="line.cpp" />
+    <ClCompile Include="loading.cpp" />
+    <ClCompile Include="mapmap.cpp" />
+    <ClCompile Include="niflheim + icePillar.cpp" />
+    <ClCompile Include="niflheim + iceSpear.cpp" />
+    <ClCompile Include="niflheim + icicle.cpp" />
+    <ClCompile Include="niflheim.cpp" />
+    <ClCompile Include="niflheimAttack1.cpp" />
+    <ClCompile Include="niflheimAttack2.cpp" />
+    <ClCompile Include="niflheimAttack3.cpp" />
+    <ClCompile Include="niflheimBattle.cpp" />
+    <ClCompile Include="niflheimDie.cpp" />
+    <ClCompile Include="niflheimEnter.cpp" />
+    <ClCompile Include="niflheimIdle.cpp" />
+    <ClCompile Include="niflheimMap.cpp" />
+    <ClCompile Include="pause.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="playerAttack.cpp" />
+    <ClCompile Include="playerBullet.cpp" />
+    <ClCompile Include="playerDash.cpp" />
+    <ClCompile Include="playerDie.cpp" />
+    <ClCompile Include="playerDonwJump.cpp" />
+    <ClCompile Include="playerFall.cpp" />
+    <ClCompile Include="playerHit.cpp" />
+    <ClCompile Include="playerJump.cpp" />
+    <ClCompile Include="playerRoll.cpp" />
+    <ClCompile Include="playerRun.cpp" />
+    <ClCompile Include="playerState.cpp" />
+    <ClCompile Include="playerStateIdle.cpp" />
+    <ClCompile Include="playGround.cpp" />
+    <ClCompile Include="progressBar.cpp" />
+    <ClCompile Include="quickSlot.cpp" />
+    <ClCompile Include="sceneManager.cpp" />
+    <ClCompile Include="soundManager.cpp" />
+    <ClCompile Include="stageManager.cpp" />
+    <ClCompile Include="startTitle.cpp" />
+    <ClCompile Include="state.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="testScene.cpp" />
+    <ClCompile Include="tileNode.cpp" />
+    <ClCompile Include="timeManager.cpp" />
+    <ClCompile Include="timer.cpp" />
+    <ClCompile Include="txtData.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="vector2.cpp" />
+    <ClCompile Include="windowsAPI.cpp" />
+    <ClCompile Include="player + tileDetect.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="windowsAPI.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico" />
+    <Image Include="windowsAPI.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bulletKing" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -37,5 +37,5 @@ void stageManager::sceneSet()
 	SCENEMANAGER->addScene("loading", new loading);
 	SCENEMANAGER->addScene("startTitle", new startTitle);
 
-	SCENEMANAGER->changeScene("ammoconda");
+	SCENEMANAGER->changeScene("startTitle");
 }
